@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title></title> 
+	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
+	<link rel="stylesheet" href="estilos.css">
+	
+
+</head>  
+<body style="background-image: url('images/Tacos6.jpg');">
+     <form action="validar2.php" method="post" class="formulario">
+    
+    <h1>Login</h1>
+     <div class="contenedor">
+         
+         <div class="input-contenedor">
+         <i class="fas fa-envelope icon"></i>
+         <input id="mail" name="mail" class="form-control" type="text" placeholder="Ingrese su E-mail" 
+                    required="required" autocomplete="off" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" 
+                    title="Formato de E-mail incorrecto"/>
+         
+         </div>
+
+         <div class="input-contenedor">
+        <i class="fas fa-key icon"></i>
+          <input id="pass" name="pass" class="form-control" type="password" placeholder="Ingrese su contraseña" 
+                    required="required" autocomplete="off" pattern="[A-Za-z0-9  ]{}" title="ingrese un total de 6 digitos"/>
+         </div>
+         <br>
+         <input type="submit" value="Iniciar Sesion" class="button">
+         <br><br>
+        <center><a href="index.html" class="button">Inicio</a></center>
+         <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
+         <p>¿No tienes una cuenta? <a class="link" href="registrarvista.php">Registrate </a></p>
+     </div>
+    </form>
+</body>
+</html>
